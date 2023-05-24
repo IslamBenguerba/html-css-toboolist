@@ -52,23 +52,19 @@ main{
 .titolo-lista{
         font-weight: bold;
 }
-.cerchio-verde{
+.cerchio{
     display: inline-block;
     vertical-align: middle;
     width: 15px;
     margin-left: 15px;
     height: 15px;
     border-radius: 50%;
-    border: solid #6bc4af;
 }
-.cerchio-rosso{
-    display: inline-block;
-    vertical-align: middle;
-    width: 15px;
-    margin-left: 15px;
-    height: 15px;
-    border-radius: 50%;
-    border: solid #ec5c53;
+.verde{
+    border: 1px solid #6bc4af;
+}
+.rosso{
+    border: 1px solid #ec5c53;
 }
 /* freccia per titolo */
 #freccia::before{
@@ -76,20 +72,18 @@ main{
     
 }
 /* /1F5F8 è la spunta   */
-#cerchio_verde::after{
+.verde::after{
     color: #6bc4af;
-    margin-bottom: 5px;
     content: "\1F5F8";
     vertical-align: baseline;
     line-height: 15px;
 }
-#cerchio_rosso::after{
+.rosso::after{
     color: #ec5c53;
     content: "\0078";
     padding-left: 3px;
     line-height: 14px;
     vertical-align: top;
-    margin-bottom: 5px
 }
 .Subtitle{
     display: inline-block;
@@ -131,4 +125,9 @@ main{
 }
 .website{
     background-color: #d7619f;
+}
+.cerchio-verde_span{
+    border: solid #6bc4af;
+    border-radius: 50%;
+    border-width: 1px;
 }
